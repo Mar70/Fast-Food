@@ -30,12 +30,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="City" class="control-label"></label>
-                <input asp-for="City" class="form-control" />
+                @Html.DropDownList("Cities", Html.GetEnumSelectList(typeof(Cities)),
+            "Select City", new { @class = "form-control" })
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="State" class="control-label"></label>
-                <input asp-for="State" class="form-control" />
+                @Html.DropDownList("States", Html.GetEnumSelectList(typeof(States)),
+            "Select State", new { @class = "form-control" })
                 <span asp-validation-for="State" class="text-danger"></span>
             </div>
             <div class="form-group">
