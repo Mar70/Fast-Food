@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Fast_Food.Data;
 using Fast_Food.Models;
 using Fast_Food.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Fast_Food.Controllers
 {
+    [Authorize(Roles="Admin")]
     public class EmployeeController : Controller
     {
         private readonly FoodContext _context;

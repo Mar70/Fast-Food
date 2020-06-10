@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Fast_Food.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fast_Food.Data
 {
-    public class FoodContext : DbContext
+    public class FoodContext : IdentityDbContext
     {
         public FoodContext(DbContextOptions<FoodContext> options) : base(options)
         { 
