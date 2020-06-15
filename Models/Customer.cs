@@ -5,20 +5,7 @@ using System.Threading.Tasks;
 
 namespace Fast_Food.Models
 {
-    public enum Cities
-    { 
-    VelikoTarnovo,
-    Sofia,
-    Lovech,
-    Pleven,
-    Plovdiv,
-    Varna,
-    Burgas
-    }
-    public enum States
-    { 
-    Bulgaria
-    }
+   
     
     public class Customer
     {
