@@ -29,14 +29,22 @@
                 <span asp-validation-for="StreetAddress" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
-                <input asp-for="City" class="form-control" />
-                <span asp-validation-for="City" class="text-danger"></span>
+                <select asp-for="@Model.City" class=" form-control" id="inLineFormInputName1">
+                    <option value="VelikoTarnovo" selected>VelikoTarnovo</option>
+                    <option value="Varna" selected>Varna</option>
+                    <option value="Plovdiv" selected>Povdiv</option>
+                    <option value="Pleven" selected>Pleven</option>
+                    <option value="Lovech" selected>Lovech</option>
+                    <option value="Burgas" selected>Burgas</option>
+                    <option value="Sofia" selected>Sofia</option>
+                </select>
             </div>
             <div class="form-group">
-                <label asp-for="State" class="control-label"></label>
-                <input asp-for="City" class="form-control" />
-                <span asp-validation-for="State" class="text-danger"></span>
+                <select asp-for="@Model.State" class=" form-control" id="inLineFormInputName1">
+                    <option value="Bulgaria" selected>Bulgaria</option>
+                    <option value="Russia" selected>Russia</option>
+
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="Zip" class="control-label"></label>

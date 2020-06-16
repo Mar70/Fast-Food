@@ -7,11 +7,8 @@ namespace Fast_Food.Models
 {
     public enum OrderItemDetailType
     { 
-      Size,
-      Flavor,
-      Topping,
-      Sauce,
-      Cheese
+      Size
+     
     }
     public class OrderItemDetail
     {
